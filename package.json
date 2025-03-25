@@ -1,0 +1,17 @@
+{
+  "name": "co3103_ass",
+  "version": "1.0.0",
+  "description": "1. Client\r - NextJs + ReactJs\r https://nextjs.org/docs/pages/getting-started/installation\r - Ant design\r https://ant.design/components/overview/\r - Tailwind\r https://tailwindcss.com/docs/installation/using-vite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
