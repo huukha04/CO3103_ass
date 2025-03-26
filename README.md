@@ -44,10 +44,10 @@ project-root/
 ├── client/         # Frontend (Next.js + React.js)
 │   ├── src/        # Source code chính
 │   │   ├── app/    # Cấu trúc theo App Router
+│   │   │   ├── pages/      # Legacy Pages Router 
 │   │   │   ├── layout.tsx  # Layout chung
 │   │   │   ├── page.tsx    # Trang chính
 │   │   ├── components/ # Các component dùng chung
-│   │   ├── pages/      # Legacy Pages Router 
 │   │   ├── styles/     # CSS, Tailwind config
 │   ├── public/     # Ảnh, favicon, assets
 │   ├── next.config.ts # Cấu hình Next.js
