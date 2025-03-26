@@ -8,8 +8,8 @@ import {
 	VideoCameraOutlined,
 } from "@ant-design/icons";
 import type { MenuProps } from "antd";
-import Sidebar from "./components/sidebar";
-import HeaderBar from "./components/header";
+import Sidebar from "../components/sidebar";
+import HeaderBar from "../components/header";
 
 const { Content } = Layout;
 
@@ -45,8 +45,8 @@ const HomePage: React.FC = () => {
 			{ key: "logout", label: <a onClick={handleLogout}>Đăng xuất</a> },
 		]
 		: [
-			{ key: "login", label: <a href="./pages/auth/login">Đăng nhập</a> },
-			{ key: "register", label: <a href="./pages/auth/register">Đăng ký</a> },
+			{ key: "login", label: <a href="./auth/login">Đăng nhập</a> },
+			{ key: "register", label: <a href="./auth/register">Đăng ký</a> },
 		];
 
 	return (
