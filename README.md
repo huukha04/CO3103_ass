@@ -38,16 +38,22 @@ npm run dev
 
 ---
 
+#### Nếu chạy trên Codepasces hay linux vui lòng cài docker
+```bash
+docker run -d --name mongo-container -p 27017:27017 mongo
+
+```
+
 ## C. Thư mục dự án
 ```
 project-root/
 ├── client/         # Frontend (Next.js + React.js)
 │   ├── src/        # Source code chính
 │   │   ├── app/    # Cấu trúc theo App Router
+│   │   │   ├── pages/      # Legacy Pages Router 
 │   │   │   ├── layout.tsx  # Layout chung
 │   │   │   ├── page.tsx    # Trang chính
 │   │   ├── components/ # Các component dùng chung
-│   │   ├── pages/      # Legacy Pages Router 
 │   │   ├── styles/     # CSS, Tailwind config
 │   ├── public/     # Ảnh, favicon, assets
 │   ├── next.config.ts # Cấu hình Next.js
