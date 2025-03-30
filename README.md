@@ -13,6 +13,7 @@ Dự án sử dụng mô hình Client-Server với các thành phần chính:
 - **Cài đặt:** [Next.js Installation Guide](https://nextjs.org/docs/pages/getting-started/installation)
 - **UI Library:** [Ant Design](https://ant.design/components/overview/)
 - **CSS Framework:** [Tailwind CSS](https://tailwindcss.com/docs/installation/using-vite)
+- **Figma** [Figma]([https://blog.logrocket.com/convert-figma-components-next-js-tailwind-css/])
 
 ### 2. Server
 - **Backend:** Express.js (Dùng module)
@@ -20,6 +21,7 @@ Dự án sử dụng mô hình Client-Server với các thành phần chính:
 
 ### 3. Công cụ hỗ trợ
 - **Draw.io Integration:** Hỗ trợ vẽ sơ đồ trực tiếp trong VSCode
+- - **Figma for VS Code:** 
 
 ## C. Môi trường
 - **Node.js:** 18+
