@@ -69,7 +69,7 @@ npm run dev
 * 
 
 
-![alt text](report/images/1.png)
+![alt text](report/images/2.png)
 ### 2. Bộ định tuyến (App router) trong nextjs 13+
 Next.js sử dụng hệ thống định tuyến dựa trên cấu trúc thư mục và tệp tin, nghĩa là bạn có thể sử dụng thư mục và tệp để xác định các tuyến đường (routes). Dưới đây là hướng dẫn tạo layouts, pages và cách liên kết giữa chúng.
 ```
