@@ -197,6 +197,6 @@ router.post("/login", loginValidator, login);
 export default router;
 ```
 
-
+Controllers sẽ xử lí resonse và trả là request tương ứng cho client.
 
 
