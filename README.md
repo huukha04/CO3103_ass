@@ -62,7 +62,7 @@ Mô hình **Client-Server** là kiến trúc phổ biến trong các ứng dụn
 - **Server** gửi response (thường là **JSON, HTML, XML, ...**) về cho Client.
 
 Mô hình Client-Server bao gồm 3 tầng:
-#### ** Tầng 1: Presentation Layer (Giao diện - Frontend)**
+#### Tầng 1: Presentation Layer (Giao diện - Frontend)**
 - Hiển thị giao diện cho người dùng.
 - Gửi request đến Backend thông qua API.
 
