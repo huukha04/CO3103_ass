@@ -53,22 +53,28 @@ npm run dev
 ```
 
 
-
-
-
 ---
-## B. Giới thiệu
-### 1. Mô hình 3-Layer trong Client - Server
-#### Tầng giao diện (Presentation layer)
-#### Tằng xử lí nghiệp vụ
-#### Tầng truy cập dữ 
+## B. Giới Thiệu
+### 1. Client - Server
+Mô hình **Client-Server** là kiến trúc phổ biến trong các ứng dụng web hiện đại, hoạt động dựa trên cơ chế **Request-Response**:
+- **Client** gửi request đến Server để yêu cầu dữ liệu hoặc thực hiện một tác vụ.
+- **Server** xử lý request, có thể truy vấn **Database** nếu cần.
+- **Server** gửi response (thường là **JSON, HTML, XML, ...**) về cho Client.
 
-* Client: gủi dữ liệu, yêu cầu và nhận kết quả từ lớp ứng dụng
-* Server: thực hiện các xử lý dữ liệu được gửi từ client
-* Database: Lưu trữ dữ liệu
-* 
+Mô hình Client-Server bao gồm 3 tầng:
+#### ** Tầng 1: Presentation Layer (Giao diện - Frontend)**
+- Hiển thị giao diện cho người dùng.
+- Gửi request đến Backend thông qua API.
 
+#### Tầng 2: Business Logic Layer (Xử lý nghiệp vụ - Backend)**
+- Xử lý logic nghiệp vụ, xác thực người dùng (Authentication).
+- Kiểm tra quyền hạn (Authorization).
+- Giao tiếp với Database để lấy dữ liệu.
 
+#### Tầng 3: Data Layer (Cơ sở dữ liệu - Database)**
+- Lưu trữ dữ liệu, xử lý truy vấn.
+
+Luồng Request-Response
 ![alt text](report/images/2.png)
 ### 2. Bộ định tuyến (App router) trong nextjs 13+
 Next.js sử dụng hệ thống định tuyến dựa trên cấu trúc thư mục và tệp tin, nghĩa là bạn có thể sử dụng thư mục và tệp để xác định các tuyến đường (routes). Dưới đây là hướng dẫn tạo layouts, pages và cách liên kết giữa chúng.
