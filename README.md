@@ -61,6 +61,7 @@ Mô hình **Client-Server** là kiến trúc phổ biến trong các ứng dụn
 - **Server** xử lý request, có thể truy vấn **Database** nếu cần.
 - **Server** gửi response (thường là **JSON, HTML, XML, ...**) về cho Client.
 ![alt text](report/images/1.png)
+
 Mô hình Client-Server bao gồm 3 tầng:
 #### Tầng 1: Presentation Layer (Giao diện - Frontend)**
 - Hiển thị giao diện cho người dùng.
@@ -75,6 +76,7 @@ Mô hình Client-Server bao gồm 3 tầng:
 - Lưu trữ dữ liệu, xử lý truy vấn.
 
 Luồng Request-Response
+
 ![alt text](report/images/2.png)
 ### 2. Bộ định tuyến (App router) trong nextjs 13+
 Next.js sử dụng hệ thống định tuyến dựa trên cấu trúc thư mục và tệp tin, nghĩa là bạn có thể sử dụng thư mục và tệp để xác định các tuyến đường (routes). Dưới đây là hướng dẫn tạo layouts, pages và cách liên kết giữa chúng.
