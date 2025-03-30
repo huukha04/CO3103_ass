@@ -5,7 +5,6 @@ Dự án sử dụng mô hình Client-Server với các thành phần chính:
 - **Client:** Next.js 15 (React + Tailwind CSS) hiển thị giao diện và gửi request tới backend.
 - **Server:** Express.js xử lý request, thực hiện xác thực và truy vấn MongoDB.
 - **Database:** MongoDB lưu trữ dữ liệu người dùng.
-- **Docker:** Triển khai client và server trong container riêng biệt, giao tiếp qua API.
 
 ## B. Cấu trúc dự án
 ### 1. Client
@@ -59,16 +58,16 @@ npm run dev
 
 ---
 ## B. Giới thiệu
-### 1. Mô hình client server
-Mô hình Client-Server là một mô hình mạng máy tính phổ biến, được sử dụng trong nhiều ứng dụng khác nhau.
+### 1. Mô hình 3-Layer trong Client - Server
+#### Tầng giao diện (Presentation layer)
+#### Tằng xử lí nghiệp vụ
+#### Tầng truy cập dữ 
 
-Cách thức hoạt động của mô hình Client – Server cụ thể như sau:
+* Client: gủi dữ liệu, yêu cầu và nhận kết quả từ lớp ứng dụng
+* Server: thực hiện các xử lý dữ liệu được gửi từ client
+* Database: Lưu trữ dữ liệu
+* 
 
-Client gửi yêu cầu đến server: Client gửi yêu cầu đến server bằng cách sử dụng một giao thức mạng. Đó có thể là một yêu cầu đơn giản như yêu cầu truy cập trang web hoặc phức tạp hơn ví dụ như yêu cầu thực hiện một giao dịch mua bán.
-
-Server xử lý yêu cầu: Server sẽ nhận được yêu cầu từ client và tiến hành xử lý yêu cầu đó. Việc xử lý yêu cầu có thể là truy cập vào cơ sở dữ liệu, thực hiện các phép tính hoặc gửi yêu cầu đến một server khác.
-
-Server trả kết quả cho client: Sau khi xử lý yêu cầu, server sẽ trả kết quả cho client. Kết quả có thể là một trang web, một email, một tệp tin hoặc một thông báo lỗi.
 
 ![alt text](report/images/1.png)
 ### 2. Bộ định tuyến (App router) trong nextjs 13+
