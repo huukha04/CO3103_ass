@@ -47,7 +47,7 @@ ta có thể tách ra các component để tái sử dụng <script type="module
   </body>
 </html>
 
-```
+```bash
 document.querySelector('#app').innerHTML = `
   <div>
     <a href="https://vite.dev" target="_blank">
@@ -67,6 +67,8 @@ document.querySelector('#app').innerHTML = `
 `
 
 ```
+
+
 ```
 Cấu trúc thư mục
 ```
