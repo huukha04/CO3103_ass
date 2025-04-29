@@ -6,13 +6,13 @@ Dự án sử dụng mô hình Client-Server với các thành phần chính:
 - **Server:** Express.js xử lý request, thực hiện xác thực và truy vấn MongoDB.
 - **Database:** MongoDB lưu trữ dữ liệu người dùng.
 
+
 ## B. Cấu trúc dự án
 ### 1. Client
 - **Framework:** Next.js 15 + React.js
 - **Cài đặt:** [Next.js Installation Guide](https://nextjs.org/docs/pages/getting-started/installation)
 - **UI Library:** [Ant Design](https://ant.design/components/overview/)
 - **CSS Framework:** [Tailwind CSS](https://tailwindcss.com/docs/installation/using-vite)
-- **Figma** [Figma]([https://blog.logrocket.com/convert-figma-components-next-js-tailwind-css/])
 
 ### 2. Server
 - **Backend:** Express.js (Dùng module)
@@ -20,7 +20,7 @@ Dự án sử dụng mô hình Client-Server với các thành phần chính:
 
 ### 3. Công cụ hỗ trợ
 - **Draw.io Integration:** Hỗ trợ vẽ sơ đồ trực tiếp trong VSCode
-- - **Figma for VS Code:** 
+- **Figma for VS Code:** 
 
 ## C. Môi trường
 - **Node.js:** 18+
@@ -53,31 +53,23 @@ npm run dev
 ```
 
 
+
+
+
 ---
-## B. Giới Thiệu
-### 1. Client - Server
-Mô hình **Client-Server** là kiến trúc phổ biến trong các ứng dụng web hiện đại, hoạt động dựa trên cơ chế **Request-Response**:
-- **Client** gửi request đến Server để yêu cầu dữ liệu hoặc thực hiện một tác vụ.
-- **Server** xử lý request, có thể truy vấn **Database** nếu cần.
-- **Server** gửi response (thường là **JSON, HTML, XML, ...**) về cho Client.
+## B. Giới thiệu
+### 1. Mô hình client server
+Mô hình Client-Server là một mô hình mạng máy tính phổ biến, được sử dụng trong nhiều ứng dụng khác nhau.
+
+Cách thức hoạt động của mô hình Client – Server cụ thể như sau:
+
+Client gửi yêu cầu đến server: Client gửi yêu cầu đến server bằng cách sử dụng một giao thức mạng. Đó có thể là một yêu cầu đơn giản như yêu cầu truy cập trang web hoặc phức tạp hơn ví dụ như yêu cầu thực hiện một giao dịch mua bán.
+
+Server xử lý yêu cầu: Server sẽ nhận được yêu cầu từ client và tiến hành xử lý yêu cầu đó. Việc xử lý yêu cầu có thể là truy cập vào cơ sở dữ liệu, thực hiện các phép tính hoặc gửi yêu cầu đến một server khác.
+
+Server trả kết quả cho client: Sau khi xử lý yêu cầu, server sẽ trả kết quả cho client. Kết quả có thể là một trang web, một email, một tệp tin hoặc một thông báo lỗi.
+
 ![alt text](report/images/1.png)
-
-Mô hình Client-Server bao gồm 3 tầng:
-#### Tầng 1: Presentation Layer (Giao diện - Frontend)**
-- Hiển thị giao diện cho người dùng.
-- Gửi request đến Backend thông qua API.
-
-#### Tầng 2: Business Logic Layer (Xử lý nghiệp vụ - Backend)**
-- Xử lý logic nghiệp vụ, xác thực người dùng (Authentication).
-- Kiểm tra quyền hạn (Authorization).
-- Giao tiếp với Database để lấy dữ liệu.
-
-#### Tầng 3: Data Layer (Cơ sở dữ liệu - Database)**
-- Lưu trữ dữ liệu, xử lý truy vấn.
-
-Luồng Request-Response
-
-![alt text](report/images/2.png)
 ### 2. Bộ định tuyến (App router) trong nextjs 13+
 Next.js sử dụng hệ thống định tuyến dựa trên cấu trúc thư mục và tệp tin, nghĩa là bạn có thể sử dụng thư mục và tệp để xác định các tuyến đường (routes). Dưới đây là hướng dẫn tạo layouts, pages và cách liên kết giữa chúng.
 ```
@@ -204,6 +196,6 @@ router.post("/login", loginValidator, login);
 export default router;
 ```
 
-Controllers sẽ xử lí resonse và trả là request tương ứng cho client.
+
 
 
