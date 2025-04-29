@@ -1,5 +1,5 @@
 
-Thay vì viết code dài như vầyvầy
+Thay vì viết code dài như vầy
 ```html
 <!doctype html>
 <html lang="en">
