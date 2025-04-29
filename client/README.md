@@ -46,7 +46,7 @@ ta có thể tách ra các component để tái sử dụng <script type="module
     <script type="module" src="/src/components/main.js"></script>
   </body>
 </html>
-
+```
 ```bash
 document.querySelector('#app').innerHTML = `
   <div>
