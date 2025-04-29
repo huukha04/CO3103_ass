@@ -48,3 +48,21 @@ ta có thể tách ra các component để tái sử dụng <script type="module
 </html>
 
 ```
+Cấu trúc thư mục
+```
+project-root/0
+├── public/                 # Các file tĩnh (serve nguyên bản)
+├── src/                    # Mã nguồn chính của ứng dụng
+│   ├── assets/             # Hình ảnh, font, v.v. được import trong JS/CSS
+│   ├── components/         # Các component (nút, layout, card,...) tái sử dụng
+│   ├── pages/              # Các trang chính 
+│   ├── style/              # Các file CSS/SCSS
+│   │   └── test.css
+│   ├── utils/              # Các hàm tiện ích
+│   │   └── counter.js
+│   └── main.js             # File JS chính khởi chạy app
+├── index.html              # Điểm bắt đầu ứng dụng trang chủ
+├── package.json
+└── vite.config.js          # Cấu hình Vite
+
+```
