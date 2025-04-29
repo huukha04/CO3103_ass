@@ -71,7 +71,7 @@ document.querySelector('#app').innerHTML = `
 
 ```
 Cấu trúc thư mục
-```
+```bash
 project-root/0
 ├── public/                 # Các file tĩnh (serve nguyên bản)
 ├── src/                    # Mã nguồn chính của ứng dụng
