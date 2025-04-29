@@ -69,7 +69,6 @@ document.querySelector('#app').innerHTML = `
 ```
 
 
-```
 Cấu trúc thư mục
 ```bash
 project-root/0
