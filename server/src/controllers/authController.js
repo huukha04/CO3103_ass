@@ -76,3 +76,16 @@ export const login = async (req, res) => {
     }
 };
 
+
+export const checkSession = async (req, res) => {
+    try {
+      if (req.session && req.session.user) {
+        res.json({ loggedIn: true, user: req.session.user });
+      } else {
+        res.json({ loggedIn: false });
+      }
+    } catch (error) {
+      console.error('Error in checkSession:', error);
+      res.status(500).json({ loggedIn: false, error: 'Internal server error' });
+    }
+  };
