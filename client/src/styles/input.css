@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  body {
+    @apply font-jakarta text-black leading-5 font-normal;
+  }
+  .BgFilter {
+    background: linear-gradient(to bottom, #ffffff 70%, #1e3a8a);
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-1480 px-[20px] mx-auto w-full;
+  }
+
+  .image {
+    @apply max-w-full block object-cover;
+  }
+}
+

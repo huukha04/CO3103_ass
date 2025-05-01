@@ -1,0 +1,24 @@
+{
+  "name": "co3103_ass",
+  "version": "1.0.0",
+  "description": "Dự án sử dụng mô hình Client-Server với các thành phần chính:\r - **Client:** Next.js 15 (React + Tailwind CSS) hiển thị giao diện và gửi request tới backend.\r - **Server:** Express.js xử lý request, thực hiện xác thực và truy vấn MongoDB.\r - **Database:** MongoDB lưu trữ dữ liệu người dùng.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huukha04/CO3103_ass.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/huukha04/CO3103_ass/issues"
+  },
+  "homepage": "https://github.com/huukha04/CO3103_ass#readme",
+  "devDependencies": {
+    "vite": "^6.3.4"
+  }
+}
