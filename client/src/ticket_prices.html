@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ticket Prices</title>
+    <link href="../style/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../imgs/cine.ico" type="image/x-icon" />
+</head>
+<body class="flex min-h-screen flex-col bg-pink">
+    <header class="my-5" id="header-placeholder"></header>
+    <main>
+        <h1 class="text-center text-white text-4xl font-bold my-5">TICKET PRICES</h1>
+        <!-- Back Button -->
+        <button onclick="window.location.href = 'homepage.html';" class="absolute top-5 left-5 text-gray hover:text-darkgray transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+        </button>
+      <section
+        id="tabContainer"
+        class="relative mb-3 flex justify-center gap-20 border-b border-transparent px-4"
+      >
+        <div
+          id="tab-2d"
+          class="relative cursor-pointer select-none pb-2 text-2xl font-semibold text-white transition-colors duration-300"
+        >
+          2D
+        </div>
+        <div
+          id="tab-3d"
+          class="relative cursor-pointer select-none pb-2 text-2xl font-semibold text-white transition-colors duration-300"
+        >
+          3D
+        </div>
+        <div
+          id="underline"
+          class="absolute bottom-0 left-0 h-[3px] rounded bg-darkred transition-transform duration-300"
+        ></div>
+      </section>
+
+      <section class="flex flex-grow items-center justify-center px-4">
+        <img
+          id="price-image"
+          src="../imgs/prices2D.png"
+          alt="Ticket prices 2D"
+          class="max-h-screen max-w-[900px] w-full object-contain opacity-100 transition-opacity duration-300 rounded-lg shadow-2xl"
+          style="opacity: 1"
+        />
+      </section>
+      <!-- button buy_ticket -->
+      <div class="text-white text-center mt-12" >
+        <button onclick="window.location.href = 'movie_schedule.html';" class="bg-coral hover:bg-hover text-white font-bold py-3 px-16 rounded-lg">
+            Buy Ticket Now
+        </button>
+    </div>
+    </main>
+    <footer class="mt-10" id="footer-placeholder"></footer>
+    <script type="module">
+      import { createFooter } from './components/footer.js';
+
+      document.getElementById('footer-placeholder').appendChild(createFooter());
+    </script>
+    <script src="ticket_prices.js"></script>
+    
+</body>
+</html>

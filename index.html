@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Cinema Booking App</title>
+	<link href="/client/style/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/client/imgs/cine.ico" type="image/x-icon" />
+</head>
+<body>
+	<div id="header"></div>
+	<script type="module" src="/client/src/components/header.js"></script>
+
+	<main class="h-auto w-full bg-[#24305E] shadow-inner">
+		<div class="h-auto w-full">
+			<div class="relative flex justify-center">
+			<div class="mb-24 mt-24 flex h-[80px] w-[850px] items-center justify-center gap-14 font-roboto text-4xl font-bold border-b border-white">
+				<div>
+					<a href="#" class="text-white hover:text-pink-500">Coming soon</a>
+					<span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-pink-500 hidden"></span>
+				</div>
+				<div>
+					<a href="#" class="text-pink-500">Now showing</a>
+				</div>
+				<div>
+					<a href="#" class="text-white hover:text-pink-500">Early screening</a>
+				</div>
+			</div>
+			
+			</div>
+			<div id="coming-soon-list" class="grid grid-cols-4 gap-[50px] pb-36 pl-[145px] pr-[145px]"></div>
+			<script type="module">
+				import { getShowing } from '/src/api/movie.js';
+			
+				async function renderComingSoon() {
+					const container = document.getElementById('coming-soon-list');
+					const { imageUrls } = await getShowing();
+			
+					container.innerHTML = '';
+					imageUrls.forEach(url => {
+						const name = url.split('/').pop().split('.')[0].replace(/_/g, ' ');
+						const title = name.charAt(0).toUpperCase() + name.slice(1);
+			
+						const div = document.createElement('div');
+						div.innerHTML = `
+							<div>
+								<img src="${url}" alt="${title}" class="rounded-3xl" />
+								<p class="mt-3 h-10 w-auto text-center font-roboto text-2xl font-semibold text-white">
+									${title}
+								</p>
+							</div>
+						`;
+						container.appendChild(div);
+					});
+				}
+			
+				// Gọi hàm khi script được tải
+				renderComingSoon();
+			</script>
+		</div>
+	</main>
+
+	<div id="footer"></div>
+	<script type="module" src="/client/src/components/footer.js"></script>
+
+
+</body>
+</html>
