@@ -3,7 +3,7 @@ export function createFooter() {
   footer.className = "p-14 bg-darkgray text-white w-full";
 
   const footerWrapper = document.createElement("div");
-  footerWrapper.className = "max-w-7xl mx-auto flex justify-between space-x-8";
+  footerWrapper.className = "max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center space-x-8";
 
   // logo & address
   const leftSection = document.createElement("div");
@@ -137,7 +137,7 @@ export function createFooter() {
   emailInput.type = "email";
   emailInput.placeholder = "Enter your email here";
   emailInput.className =
-    "px-4 py-4 rounded-2xl pr-32 focus:outline-none focus:ring-2 focus:ring-pink flex-grow font-semibold";
+    "px-4 py-4 rounded-2xl lg:pr-32 focus:outline-none focus:ring-2 focus:ring-pink flex-grow font-semibold";
   // pr-32 để tạo khoảng trống bên phải cho button đè lên
 
   const subscribeButton = document.createElement("button");
@@ -151,7 +151,21 @@ export function createFooter() {
 
   rightSection.appendChild(emailLabel);
   rightSection.appendChild(emailInputWrapper);
+  
+  function updatePlaceholder() {
+    if (window.innerWidth < 640) {
+      // mobile dưới 640px (Tailwind sm)
+      emailInput.placeholder = "Enter email";
+    } else {
+      emailInput.placeholder = "Enter your email here";
+    }
+  }
 
+  // Gọi 1 lần khi load trang
+  updatePlaceholder();
+
+  // Lắng nghe thay đổi kích thước
+  window.addEventListener("resize", updatePlaceholder);
 
   footerWrapper.appendChild(leftSection);
   footerWrapper.appendChild(middleSection);
