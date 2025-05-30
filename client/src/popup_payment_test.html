@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Popup Payment Demo</title>
+  <link href="../style/output.css" rel="stylesheet" />
+  <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../imgs/cine.ico" type="image/x-icon" />
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+
+  <button id="open-popup-btn" class="bg-red-400 hover:bg-red-500 text-white py-3 px-6 rounded-lg font-semibold">
+    Show Payment Popup
+  </button>
+
+  <script type="module">
+    import { showPopupPayment } from './popup_payment.js';
+
+    const btn = document.getElementById('open-popup-btn');
+
+    btn.addEventListener('click', () => {
+      showPopupPayment();
+    });
+  </script>
+</body>
+</html>
