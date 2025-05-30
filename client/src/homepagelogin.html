@@ -29,17 +29,30 @@
       >
         <a href="#" class="hover:text-gray-300">MEMBER</a>
         <a href="#" class="hover:text-gray-300">MOVIES</a>
-        <a href="#" class="hover:text-gray-300">MOVIES SCHEDULE</a>
+        <a href="./movie_schedule.html" class="hover:text-gray-300">MOVIES SCHEDULE</a>
         <a href="#" class="hover:text-gray-300">TICKET PRICES</a>
       </div>
-      <div
-        class="mr-[100px] flex justify-center items-center"
-      >
-        <div class="flex relative justify-center items-center h-[70px] w-[70px] bg-[#ffb5bf] rounded-full">
-          <div class="flex absolute self-center h-[42px] w-[42px] items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[42px] h-[42px]">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-            </svg>       
+      <div class="mr-[100px] flex items-center justify-center">
+        <div
+          class="relative flex h-[70px] w-[70px] items-center justify-center rounded-full bg-[#ffb5bf]"
+        >
+          <div
+            class="absolute flex h-[42px] w-[42px] items-center justify-center self-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-[42px] w-[42px]"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+            </svg>
           </div>
         </div>
       </div>
@@ -48,20 +61,23 @@
       <div class="h-auto w-full">
         <div class="relative flex justify-center">
           <div
-            class="mb-24 mt-24 flex h-[80px] w-[850px] items-center justify-center gap-14 font-roboto text-4xl font-bold border-b border-white"
+            class="mb-24 mt-24 flex h-[80px] w-[850px] items-center justify-center gap-14 border-b border-white font-roboto text-4xl font-bold"
           >
             <div>
-              <a href="#" class="text-white hover:text-pink-500">Coming soon</a>
-              <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-pink-500 hidden"></span>
+              <a href="#" class="hover:text-pink-500 text-white">Coming soon</a>
+              <span
+                class="bg-pink-500 absolute bottom-0 left-1/2 hidden h-1 w-20 -translate-x-1/2 transform"
+              ></span>
             </div>
             <div>
               <a href="#" class="text-pink-500">Now showing</a>
             </div>
             <div>
-              <a href="#" class="text-white hover:text-pink-500">Early screening</a>
+              <a href="#" class="hover:text-pink-500 text-white"
+                >Early screening</a
+              >
             </div>
           </div>
-          
         </div>
         <div class="grid grid-cols-4 gap-[50px] pb-36 pl-[145px] pr-[145px]">
           <div class="">
@@ -331,7 +347,7 @@
               placeholder="Enter your email here"
             />
             <button
-              class="absolute end-0 flex h-[60px] w-auto min-w-[170px] items-center justify-center gap-[10px] rounded-2xl border border-white bg-[#ffb5bf] p-[10px] text-[#24305e] hover:border-pink-500 hover:bg-pink-500"
+              class="hover:border-pink-500 hover:bg-pink-500 absolute end-0 flex h-[60px] w-auto min-w-[170px] items-center justify-center gap-[10px] rounded-2xl border border-white bg-[#ffb5bf] p-[10px] text-[#24305e]"
             >
               Send
             </button>
