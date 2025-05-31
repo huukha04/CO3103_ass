@@ -1,0 +1,273 @@
+<!-- cd client -->
+<!-- npx tailwindcss -i ./style/input.css -o ./style/output.css --watch -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Detail</title>
+    <link href="../style/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../imgs/cine.ico" type="image/x-icon" />
+  </head>
+  <body >
+    <header id="header-placeholder"></header>
+    <main class="mx-auto flex flex-col lg:flex-row justify-center bg-pink" >
+      <div class="detail m-20">
+        <section class="date">
+          <h2
+            class="Date justify-start font-roboto text-5xl font-bold text-black"
+          >
+            Date
+          </h2>
+          <div class="dates mt-5 flex flex-wrap gap-2">
+            <div
+              class="date-group flex h-20 w-20 cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-darkblue bg-transparent"
+              type="button"
+            >
+              <span class="font-roboto text-base font-medium text-gray"
+                >21 Oct</span
+              >
+              <span class="font-roboto text-xl font-black text-darkgray"
+                >MON</span
+              >
+            </div>
+            <div
+              class="date-group flex h-20 w-20 cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-darkblue bg-transparent"
+              type="button"
+            >
+              <span class="font-roboto text-base font-medium text-gray"
+                >22 Oct</span
+              >
+              <span class="font-roboto text-xl font-black text-darkgray"
+                >TUE</span
+              >
+            </div>
+            <div
+              class="date-group flex h-20 w-20 cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-darkblue bg-transparent"
+              type="button"
+            >
+              <span class="font-roboto text-base font-medium text-gray"
+                >23 Oct</span
+              >
+              <span class="font-roboto text-xl font-black text-darkgray"
+                >WED</span
+              >
+            </div>
+            <div
+              class="date-group flex h-20 w-20 cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-darkblue bg-transparent"
+              type="button"
+            >
+              <span class="font-roboto text-base font-medium text-gray"
+                >24 Oct</span
+              >
+              <span class="font-roboto text-xl font-black text-darkgray"
+                >THU</span
+              >
+            </div>
+            <div
+              class="date-group flex h-20 w-20 cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-darkblue bg-transparent"
+              type="button"
+            >
+              <span class="font-roboto text-base font-medium text-gray"
+                >25 Oct</span
+              >
+              <span class="font-roboto text-xl font-black text-darkgray"
+                >FRI</span
+              >
+            </div>
+            <div
+              class="date-group flex h-20 w-20 cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-darkblue bg-transparent"
+              type="button"
+            >
+              <span class="font-roboto text-base font-medium text-gray"
+                >26 Oct</span
+              >
+              <span class="font-roboto text-xl font-black text-darkgray"
+                >SAT</span
+              >
+            </div>
+            <div
+              class="date-group flex h-20 w-20 cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-darkblue bg-transparent"
+              type="button"
+            >
+              <span class="font-roboto text-base font-medium text-gray"
+                >27 Oct</span
+              >
+              <span class="font-roboto text-xl font-black text-darkgray"
+                >SUN</span
+              >
+            </div>
+          </div>
+        </section>
+        <section class="Time mt-10">
+          <h2
+            class="Times justify-start font-roboto text-5xl font-bold text-black"
+          >
+            Time
+          </h2>
+          <div class="regular mt-5">
+            <h2 class="mt-1 font-roboto text-3xl font-bold text-white">
+              Regular
+            </h2>
+            <div class="time-group mt-5 flex flex-wrap gap-2">
+              <div
+                class="time mt-2 flex h-10 w-20 cursor-pointer items-center justify-center rounded border-2 border-darkblue font-roboto text-sm font-bold"
+              >
+                14:40
+              </div>
+              <div
+                class="time mt-2 flex h-10 w-20 cursor-pointer items-center justify-center rounded border-2 border-darkblue font-roboto text-sm font-bold"
+              >
+                14:40
+              </div>
+              <div
+                class="time mt-2 flex h-10 w-20 cursor-pointer items-center justify-center rounded border-2 border-darkblue font-roboto text-sm font-bold"
+              >
+                14:40
+              </div>
+              <div
+                class="time mt-2 flex h-10 w-20 cursor-pointer items-center justify-center rounded border-2 border-darkblue font-roboto text-sm font-bold"
+              >
+                14:40
+              </div>
+              <div
+                class="time mt-2 flex h-10 w-20 cursor-pointer items-center justify-center rounded border-2 border-darkblue font-roboto text-sm font-bold"
+              >
+                14:40
+              </div>
+            </div>
+          </div>
+          <div class="premium mt-10">
+            <h2 class="mt-1 font-roboto text-3xl font-bold text-white">
+              Premium
+            </h2>
+            <div class="time-group mt-5 flex flex-wrap gap-2 justify-start">
+              <div
+                class="time mt-2 flex h-10 w-20 cursor-pointer items-center justify-center rounded border-2 border-darkblue font-roboto text-sm font-bold"
+              >
+                14:40
+              </div>
+              <div
+                class="time mt-2 flex h-10 w-20 cursor-pointer items-center justify-center rounded border-2 border-darkblue font-roboto text-sm font-bold"
+              >
+                14:40
+              </div>
+              <div
+                class="time mt-2 flex h-10 w-20 cursor-pointer items-center justify-center rounded border-2 border-darkblue font-roboto text-sm font-bold"
+              >
+                14:40
+              </div>
+              <div
+                class="time mt-2 flex h-10 w-20 cursor-pointer items-center justify-center rounded border-2 border-darkblue font-roboto text-sm font-bold"
+              >
+                14:40
+              </div>
+              <div
+                class="time mt-2 flex h-10 w-20 cursor-pointer items-center justify-center rounded border-2 border-darkblue font-roboto text-sm font-bold"
+              >
+                14:40
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="poster m-20 flex flex-col gap-5 items-center">
+        <img
+          src="../imgs/poster-moviedetail.png"
+          alt="poster-imame"
+          class="max-w-[430px] w-full rounded-lg shadow-lg"
+        />
+        <h1 class="title text-2xl font-semibold">
+          Captain America: Brave New World
+        </h1>
+        <div class="movie-info flex">
+          <div class="info-title flex flex-col gap-1 text-darkgray">
+            <span>Genre</span>
+            <span>Director</span>
+            <span>Running time</span>
+            <span>Rated</span>
+          </div>
+          <div class="info-content ml-10 flex flex-col gap-1 text-darkgray">
+            <span>Action, Science Fiction</span>
+            <span>Julius Onah</span>
+            <span>118 minutes</span>
+            <span>T13</span>
+          </div>
+        </div>
+        <div
+          class="mx-auto w-full overflow-hidden rounded-xl border-2 p-6 shadow-md md:max-w-2xl"
+        >
+          <div class="mb-5">
+            <h1 class="text-gray-800 text-center text-3xl font-bold">
+              Cine Ticket UVK
+            </h1>
+            <p class="text-gray-600 mt-2 text-center">
+              Binh Thanh, 23 October 2023
+            </p>
+          </div>
+          <div class="flex flex-col lg:flex-row items-center justify-between px-16">
+            <span
+              class="mb-6 inline-block rounded bg-yellow-400 px-4 py-2 text-center font-bold text-black"
+            >
+              PREMIUM
+            </span>
+            <div class="mb-8 text-center">
+              <p class="text-gray-800 text-4xl font-bold">14:40</p>
+            </div>
+          </div>
+
+          <!-- Note -->
+          <p class="text-gray-500 mb-8 text-center italic">
+            *Seat selection can be done after this
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex space-x-4">
+            <button
+              onclick="window.location.href = 'movie_schedule.html';"
+              class="flex-1 rounded-lg bg-lightgray px-4 py-3 font-bold text-white transition duration-200 hover:bg-gray"
+            >
+              Cancel
+            </button>
+            <button
+              onclick="window.location.href = 'select_seat.html';"
+              class="flex-1 rounded-lg bg-coral px-4 py-3 font-bold text-white transition duration-200 hover:bg-hover"
+            >
+              Proceed
+            </button>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer id="footer-placeholder"></footer>
+  <script src="./movie-detail.js"></script>
+  <script type="module">
+
+    /*import { createHeader } from './components/header.js';
+
+    const isLoggedIn = false;
+    const avatarUrl = '/client/public/user-avt.png';
+
+    const headerContainer = document.getElementById('header-container');
+    const header = createHeader(isLoggedIn, avatarUrl);
+    headerContainer.appendChild(header); */
+
+
+    import { createHeader } from './components/header.js';
+    import { createFooter } from './components/footer.js';
+
+    document.getElementById('header-placeholder').appendChild(createHeader());
+    document.getElementById('footer-placeholder').appendChild(createFooter());
+  </script>
+  </body>
+</html>

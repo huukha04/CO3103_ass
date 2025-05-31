@@ -1,0 +1,920 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinema Booking App</title>
+    <link href="../style/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="h-auto w-full bg-[#94CEFA] font-roboto text-[#24305E]">
+    <!-- header -->
+    <div class="flex w-full items-center justify-between pl-24 pr-24">
+      <div class=""><p class="text-5xl">Seat</p></div>
+      <div
+        class="flex items-center justify-end rounded-lg border-[#FFB6B6] bg-[#FFB6B6] text-center"
+      >
+        <a
+          href="./movie-detail.html"
+          class="rounded-lg border-[#FFB6B6] bg-[#FFB6B6] text-5xl"
+        >
+          X
+        </a>
+      </div>
+    </div>
+    <!-- seat block -->
+    <div class="flex justify-center border-b-2 border-black pb-[100px]">
+      <div class="flex flex-col items-center justify-center">
+        <!-- seat block -->
+        <div>
+          <!-- seat block left and right -->
+          <div class="grid grid-cols-2 gap-24 pt-10">
+            <!-- seat block left -->
+            <div class="grid grid-rows-7 gap-3">
+              <div class="grid grid-cols-10 gap-3">
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">A1</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">A2</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">A3</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">A4</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">A5</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">A6</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">A7</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">A8</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">A9</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">A10</p>
+                </div>
+              </div>
+              <div class="grid grid-cols-10 gap-3">
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">B1</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">B2</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">B3</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">B4</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">B5</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">B6</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">B7</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">B8</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">B9</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">B10</p>
+                </div>
+              </div>
+              <div class="grid grid-cols-10 gap-3">
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">C1</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">C2</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">C3</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">C4</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">C5</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">C6</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">C7</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">C8</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">C9</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">C10</p>
+                </div>
+              </div>
+              <div class="grid grid-cols-10 gap-3">
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">D1</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">D2</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">D3</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">D4</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">D5</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">D6</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">D7</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">D8</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">D9</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">D10</p>
+                </div>
+              </div>
+              <div class="grid grid-cols-10 gap-3">
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">E1</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">E2</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">E3</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">E4</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">E5</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">E6</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">E7</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">E8</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">E9</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">E10</p>
+                </div>
+              </div>
+              <div class="grid grid-cols-10 gap-3">
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">F1</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">F2</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">F3</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">F4</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">F5</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">F6</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">F7</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">F8</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">F9</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">F10</p>
+                </div>
+              </div>
+              <div class="grid grid-cols-10 gap-3">
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">G1</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">G2</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">G3</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">G4</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">G5</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">G6</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">G7</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">G8</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">G9</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">G10</p>
+                </div>
+              </div>
+              <div class="grid grid-cols-10 gap-3">
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">H1</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">H2</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">H3</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">H4</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">H5</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">H6</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">H7</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">H8</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">H9</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">H10</p>
+                </div>
+              </div>
+            </div>
+            <!-- seat block right -->
+            <div class="grid grid-rows-7 gap-3">
+              <div class="grid grid-cols-10 gap-3">
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">A11</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">A12</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">A13</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">A14</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">A15</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">A16</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">A17</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">A18</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">A19</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">A20</p>
+                </div>
+              </div>
+              <div class="grid grid-cols-10 gap-3">
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">B11</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">B12</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">B13</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">B14</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">B15</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">B16</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">B17</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">B18</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">B19</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">B20</p>
+                </div>
+              </div>
+              <div class="grid grid-cols-10 gap-3">
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">C11</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">C12</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">C13</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">C14</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">C15</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">C16</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">C17</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">C18</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">C19</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">C20</p>
+                </div>
+              </div>
+              <div class="grid grid-cols-10 gap-3">
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">D11</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">D12</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">D13</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">D14</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">D15</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">D16</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">D17</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">D18</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">D19</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">D20</p>
+                </div>
+              </div>
+              <div class="grid grid-cols-10 gap-3">
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">E11</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">E12</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">E13</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">E14</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">E15</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">E16</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">E17</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">E18</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">E19</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">E20</p>
+                </div>
+              </div>
+              <div class="grid grid-cols-10 gap-3">
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">F11</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">F12</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">F13</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">F14</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">F15</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">F16</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">F17</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">F18</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">F19</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">F20</p>
+                </div>
+              </div>
+              <div class="grid grid-cols-10 gap-3">
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">G11</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">G12</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">G13</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">G14</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">G15</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">G16</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">G17</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">G18</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">G19</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">G20</p>
+                </div>
+              </div>
+              <div class="grid grid-cols-10 gap-3">
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">H11</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">H12</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">H13</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">H14</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">H15</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">H16</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">H17</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">H18</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">H19</p>
+                </div>
+                <div
+                  class="nthchair flex h-[36px] w-[40px] items-center justify-center rounded-lg bg-[#FFB6B6] hover:bg-[#AD4042]"
+                >
+                  <p class="text-xs font-bold">H20</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- screen -->
+          <div
+            class="mt-10 flex h-[50px] w-full items-center justify-center rounded-full bg-[#FFB6B6]"
+          >
+            <p class="text-xs font-bold">SCREEN</p>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- selected seat information -->
+    <div class="mx-auto grid w-[90%] grid-cols-4 gap-4 pt-14">
+      <div class="flex flex-col justify-center">
+        <div class="">TOTAL</div>
+        <div class="flex items-center justify-start text-2xl font-bold">
+          <p>RM</p>
+          <p>56.86</p>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center">
+        <div>SEAT</div>
+        <div class="flex items-center justify-start text-2xl font-bold">
+          <p>C8</p>
+          <p class="ml-2">C9</p>
+          <p class="ml-2">C10</p>
+        </div>
+      </div>
+      <div
+        class="mr-10 flex items-center justify-center rounded-md border-2 border-black text-center"
+      >
+        <a href="./movie-detail.html" class="text-2xl font-bold">Back</a>
+      </div>
+      <div
+        class="flex w-full items-center justify-center rounded-md border-[#FF6969] bg-[#FF6969] p-2 text-center text-white hover:bg-red-500"
+      >
+        <a href="./order_detail.html" class="text-2xl font-bold">
+          Proceed Payment
+        </a>
+      </div>
+    </div>
+  </body>
+  <footer></footer>
+</html>
