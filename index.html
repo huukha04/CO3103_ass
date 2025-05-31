@@ -18,7 +18,7 @@
     <link rel="icon" href="/client/imgs/cine.ico" type="image/x-icon" />
 </head>
 <body>
-	<div id="header"></div>
+	<!-- <div id="header"></div>
 	<script type="module" src="/client/src/components/header.js"></script>
 
 	<main class="h-auto w-full bg-[#24305E] shadow-inner">
@@ -71,8 +71,21 @@
 	</main>
 
 	<div id="footer"></div>
-	<script type="module" src="/client/src/components/footer.js"></script>
+	<script type="module" src="/client/src/components/footer.js"></script> -->
 
-
+	<script type="module">
+		import { auth } from "/client/src/utils/auth.js";
+		const currentUser = auth.getCurrentUser();
+	  
+		if (currentUser && currentUser.user.role === "admin") {
+			window.location.href = "/client/src/admin.html";
+		  }
+		else if (auth.isLoggedIn()) {
+		  window.location.href = "/client/src/homepagelogin.html";
+		}
+		else {
+		  window.location.href = "/client/src/homepage.html";
+		}
+	  </script>
 </body>
 </html>

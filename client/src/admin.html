@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Movie</title>
+  <link href="../style/output.css" rel="stylesheet" />
+</head>
+<body class="scroll-smooth bg-gray-900 text-white min-h-screen flex">
+  <!-- Sidebar -->
+  <nav class="w-48 bg-blue-300 flex flex-col p-4">
+    <a href="#" class="font-bold text-xl mb-6 text-blue-800">Admin CineTicket</a>
+    <ul class="space-y-2">
+      <li><a href="#" class="block bg-blue-600 text-black font-bold px-3 py-2 rounded">Movies</a></li>
+      <li><a href="#section-Rooms" class="block text-blue-800 px-3 py-2 rounded hover:bg-blue-400">Rooms Management</a></li>
+      <li><a href="#section-listTheater" class="block text-blue-800 px-3 py-2 rounded hover:bg-blue-400">Theater Management</a></li>
+      <li><a href="#" class="block text-blue-800 px-3 py-2 rounded hover:bg-blue-400">Orders</a></li>
+      <li><a href="#" class="block text-blue-800 px-3 py-2 rounded hover:bg-blue-400">Report</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-1 flex p-4 space-x-4 bg-pink text-black">
+    <!-- Movies Table -->
+     <div class="flex flex-col">
+      <section id="section-listFilm" class="bg-pink p-6 rounded-lg shadow-lg max-w-7xl mx-auto">
+        <h1 class="text-3xl font-bold mb-6 text-black">Danh sách phim</h1>
+    
+        <table class="min-w-full table-auto border border-gray bg-white text-black rounded-lg overflow-hidden">
+          <thead>
+            <tr class="bg-pink-500 text-black">
+              <th class="border border-gray-400 px-4 py-2">#</th>
+              <th class="border border-gray-400 px-4 py-2">Ảnh</th>
+              <th class="border border-gray-400 px-4 py-2">Tên phim</th>
+              <th class="border border-gray-400 px-4 py-2">Thể loại</th>
+              <th class="border border-gray-400 px-4 py-2">Ngày phát hành</th>
+              <th class="border border-gray-400 px-4 py-2">Đạo diễn</th>
+              <th class="border border-gray-400 px-4 py-2">Độ tuổi</th>
+              <th class="border border-gray-400 px-4 py-2">Thời lượng (phút)</th>
+              <th class="border border-gray-400 px-4 py-2">Rating</th>
+            </tr>
+          </thead>
+          <tbody id="movieTableBody" class="bg-pink-100">
+            <!-- Dữ liệu phim sẽ chèn vào đây -->
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Rooms -->
+      <section id="section-Rooms" class="w-full mx-auto p-4 bg-pink-300 rounded shadow my-6 text-black">
+        <h2 class="font-bold text-xl mb-4">Danh sách Phòng Chiếu</h2>
+      
+        <table class="min-w-full table-auto border border-gray-600 bg-white text-black rounded-lg overflow-hidden">
+          <thead>
+            <tr class="bg-pink-500 text-black">
+              <th class="border border-gray-400 px-4 py-2">#</th>
+              <th class="border border-gray-400 px-4 py-2">Tên phòng</th>
+              <th class="border border-gray-400 px-4 py-2">Rạp</th>
+              <th class="border border-gray-400 px-4 py-2">Số ghế</th>
+            </tr>
+          </thead>
+          <tbody id="roomsTableBody" class="bg-pink-100"></tbody>
+        </table>
+      </section>
+      
+      <!-- Theater -->
+      <section id="section-listTheater" class="w-full mx-auto p-4 bg-pink-300 rounded shadow my-6 text-black">
+        <h2 class="font-bold text-xl mb-4">Danh sách Rạp Phim</h2>
+      
+        <!-- Danh sách rạp -->
+        <table class="min-w-full table-auto border border-gray-600 bg-white text-black rounded-lg overflow-hidden mb-6">
+          <thead>
+            <tr class="bg-pink-500 text-black">
+              <th class="border border-gray-400 px-4 py-2">#</th>
+              <th class="border border-gray-400 px-4 py-2">Tên Rạp</th>
+              <th class="border border-gray-400 px-4 py-2">Địa chỉ</th>
+            </tr>
+          </thead>
+          <tbody id="cinemasTableBody" class="bg-pink-100"></tbody>
+        </table>
+      </section>
+      
+      <section id="section-addTheater" class="w-full mx-auto p-4 bg-pink-300 rounded shadow my-6 text-black">
+        <h2 class="font-bold text-xl mb-4">Thêm Rạp Phim</h2>
+        <!-- Form tạo rạp mới -->
+        <form id="cinemaForm" class="flex flex-col space-y-3">
+          <input type="text" id="cinemaName" placeholder="Tên Rạp" class="border border-gray-400 rounded p-2" required />
+          <input type="text" id="cinemaAddress" placeholder="Địa chỉ" class="border border-gray-400 rounded p-2" required />
+          <button type="submit" class="bg-coral px-4 py-2 rounded text-white hover:bg-hover">Thêm Rạp</button>
+        </form>
+      </section>
+      
+      <section class="w-full max-w-4xl mx-auto p-4 bg-pink-300 rounded shadow my-6 text-black">
+        <h2 class="font-bold text-xl mb-4">Xem Lịch Chiếu Theo Phim</h2>
+      
+        <!-- Dropdown chọn phim -->
+        <label class="block mb-2">
+          Chọn Phim:
+          <select id="movieSelect" class="w-full border border-gray-400 rounded p-2"></select>
+        </label>
+      
+        <!-- Nút xem lịch chiếu -->
+        <button id="btnFetchShowtimes" class="bg-red-400 px-4 py-2 rounded text-white hover:bg-red-500 mb-6">Xem Lịch Chiếu</button>
+      
+        <!-- Bảng hiển thị lịch chiếu -->
+        <table class="min-w-full table-auto border border-gray-600 bg-white text-black rounded-lg overflow-hidden">
+          <thead>
+            <tr class="bg-pink-500 text-black">
+              <th class="border border-gray-400 px-4 py-2">#</th>
+              <th class="border border-gray-400 px-4 py-2">Rạp</th>
+              <th class="border border-gray-400 px-4 py-2">Phòng</th>
+              <th class="border border-gray-400 px-4 py-2">Thời gian</th>
+              <th class="border border-gray-400 px-4 py-2">Giá vé</th>
+              <th class="border border-gray-400 px-4 py-2">Ghế</th>
+            </tr>
+          </thead>
+          <tbody id="showtimesTableBody" class="bg-pink-100"></tbody>
+        </table>
+      </section>
+      
+    
+    </div>
+
+
+    <section id="section-addFilm" class="w-96 p-4 bg-pink-300 rounded shadow">
+      <h2 class="font-bold text-lg mb-4">Add movie</h2>
+      <form id="movieForm" class="flex flex-col space-y-3 text-black" enctype="multipart/form-data">
+        <label>
+          Movie Title <span class="text-red-600">*</span>
+          <input type="text" id="title" name="title" class="w-full border border-gray-400 rounded p-1" required />
+        </label>
+    
+        <label>
+          Genre <span class="text-red-600">*</span>
+          <input type="text" id="genre" name="genre" class="w-full border border-gray-400 rounded p-1" required />
+        </label>
+    
+        <label>
+          Director <span class="text-red-600">*</span>
+          <input type="text" id="director" name="director" class="w-full border border-gray-400 rounded p-1" required />
+        </label>
+    
+        <label>
+          Release Date <span class="text-red-600">*</span>
+          <input type="date" id="releaseDate" name="releaseDate" class="w-full border border-gray-400 rounded p-1" required />
+        </label>
+    
+        <label>
+          Rating (0-10) <span class="text-red-600">*</span>
+          <input type="number" id="rating" name="rating" min="0" max="10" step="0.1" class="w-full border border-gray-400 rounded p-1" required />
+        </label>
+    
+        <label>
+          Age Limit <span class="text-red-600">*</span>
+          <input type="number" id="ageLimit" name="ageLimit" min="0" class="w-full border border-gray-400 rounded p-1" required />
+        </label>
+    
+        <label>
+          Duration (minutes) <span class="text-red-600">*</span>
+          <input type="number" id="duration" name="duration" min="1" class="w-full border border-gray-400 rounded p-1" required />
+        </label>
+    
+        <label>
+          Description
+          <textarea id="description" name="description" rows="3" class="w-full border border-gray-400 rounded p-1"></textarea>
+        </label>
+    
+        <label class="flex flex-col items-center border border-dashed border-gray-400 p-2 rounded cursor-pointer w-full">
+          <img id="posterPreview" src="../imgs/black_cine_icon_ticket.png" alt="Poster" class="w-24 h-auto mb-2" />
+          <input type="file" id="poster" name="poster" accept="image/*" class="hidden" />
+          <span class="text-sm text-gray">Click or drag image to this area to upload</span>
+        </label>
+    
+        <div class="flex space-x-2">
+          <button type="submit" class="bg-red-400 px-4 py-2 rounded text-white hover:bg-red-500 flex-1">Save</button>
+          <button type="button" id="btnCancel" class="bg-gray px-4 py-2 rounded text-white flex-1">Cancel</button>
+        </div>
+      </form>
+    </section>
+    
+  </main>
+
+  <script src="./admin_getMovie.js"></script>
+  <script src="./admin_addMovie.js"></script>
+  <script src="./admin_formAddMovie.js"></script>
+  <script src="./admin_showRooms.js"></script>
+  <script src="./admin_theater.js"></script>
+  <script src="./admin_showTimes.js"></script>
+</body>
+</html>
