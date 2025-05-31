@@ -18,6 +18,9 @@ export default {
         1480: "1480px",
       },
       colors: {
+        blue: {
+          800: "#1e40af",
+        },
         gray: "#5A637A",
         lightgray: "#8a8a8a",
 
@@ -53,7 +56,6 @@ export default {
       strokeDasharray: {
         DEFAULT: "40",
       },
-      
     },
   },
 

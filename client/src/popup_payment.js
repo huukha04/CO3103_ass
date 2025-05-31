@@ -35,7 +35,7 @@ export function showPopupPayment() {
 
 
           <button onclick="window.location.href = 'view_ticket.html';" id="btn-view-ticket" class="w-full bg-red-400 hover:bg-red-500 text-white font-semibold py-3 rounded-md transition-colors">View Ticket</button>
-          <button onclick="window.location.href = 'homepage.html';" id="btn-back-homepage" class="w-full border border-red-400 text-white font-semibold py-3 rounded-md hover:bg-red-600 hover:border-red-600 transition-colors">Back to Homepage</button>
+          <button onclick="window.location.href = 'homepagelogin.html';" id="btn-back-homepage" class="w-full border border-red-400 text-white font-semibold py-3 rounded-md hover:bg-red-600 hover:border-red-600 transition-colors">Back to Homepage</button>
         </div>
       `;
 
