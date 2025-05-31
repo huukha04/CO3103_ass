@@ -23,6 +23,7 @@ export default {
         },
         gray: "#5A637A",
         lightgray: "#8a8a8a",
+
         pink: "#FFB5BF",
         coral: "#FF6969",
         hover: "#AD4042",

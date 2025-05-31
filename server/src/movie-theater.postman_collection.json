@@ -1,0 +1,409 @@
+{
+	"info": {
+		"_postman_id": "6d3b99f1-593d-434e-a216-bee2466098ab",
+		"name": "movie-theater",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37861289"
+	},
+	"item": [
+		{
+			"name": "get movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/movies",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get movie by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/movies/68371f52279d2b54308331ff",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"movies",
+						"68371f52279d2b54308331ff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get rooms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/rooms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"rooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cinemas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/cinemas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"cinemas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show-times by movie",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM3MjQ3Zjk3MzUxYTU2Y2MxMjllODQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDg0NDY3MjEsImV4cCI6MTc0OTA1MTUyMX0.M3GZbL7Ebf5IfymHjgE_KwBuUgFWrzeEVLbbYu16sI8"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/show-times/movie/68371f52279d2b54308331ff",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"show-times",
+						"movie",
+						"68371f52279d2b54308331ff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show-times by movie and date",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM3MjQ3Zjk3MzUxYTU2Y2MxMjllODQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDg0NDY3MjEsImV4cCI6MTc0OTA1MTUyMX0.M3GZbL7Ebf5IfymHjgE_KwBuUgFWrzeEVLbbYu16sI8"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/show-times/movie/68371f52279d2b54308331ff/date/2025-06-01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"show-times",
+						"movie",
+						"68371f52279d2b54308331ff",
+						"date",
+						"2025-06-01"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post movie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM3MjQ3Zjk3MzUxYTU2Y2MxMjllODQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDg0NDQ0NzMsImV4cCI6MTc0OTA0OTI3M30.zSuyYveQErqRl8az7FwuBE0ILCXQPYkCW4RmNkWjHw8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "phim hay vai lon",
+							"type": "text"
+						},
+						{
+							"key": "genre",
+							"value": "action",
+							"type": "text"
+						},
+						{
+							"key": "releaseDate",
+							"value": "2025-05-05",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "director",
+							"value": "davenguyen",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "90",
+							"type": "text"
+						},
+						{
+							"key": "ageLimit",
+							"value": "18",
+							"type": "text"
+						},
+						{
+							"key": "poster",
+							"type": "file",
+							"src": "/C:/Users/Admin/Downloads/Untitled design.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/api/movies",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Davenguyen\",\r\n    \"email\": \"davenguyen@gmail.com\",\r\n    \"password\": \"davenguyen\",\r\n    \"phone\": \"0399434702\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"davenguyen@gmail.com\",\r\n    \"password\": \"davenguyen\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showTime",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM3MjQ3Zjk3MzUxYTU2Y2MxMjllODQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDg0NDY3MjEsImV4cCI6MTc0OTA1MTUyMX0.M3GZbL7Ebf5IfymHjgE_KwBuUgFWrzeEVLbbYu16sI8"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"movie\": \"68371f52279d2b54308331ff\",\n  \"cinema\": \"68372f66e7e90a56e0ea80f4\",\n  \"room\": \"68372f86e7e90a56e0ea80f7\",\n  \"startTime\": \"2025-06-01T19:00:00.000Z\",\n  \"price\": 90000,\n  \"seatType\": \"Regular 2D\",\n  \"seats\": [\n    { \"code\": \"A1\" },\n    { \"code\": \"A2\" },\n    { \"code\": \"A3\" }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/show-times",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"show-times"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "room",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{TOKEN}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Phòng 1\",\n  \"cinema\": \"68372f66e7e90a56e0ea80f4\",\n  \"seats\": [\n    { \"code\": \"A1\" },\n    { \"code\": \"A2\" },\n    { \"code\": \"A3\" },\n    { \"code\": \"B1\" },\n    { \"code\": \"B2\" }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/rooms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"rooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cinema",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{TOKEN}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"CGV Vincom\",\n  \"address\": \"Vincom Center, Quận 1, TP.HCM\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/cinemas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"cinemas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
