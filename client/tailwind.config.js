@@ -21,9 +21,7 @@ export default {
         gray: "#5A637A",
         lightgray: "#8a8a8a",
 
-        // xóa cái định nghĩa màu pink ở đây do nó định nghĩa lại màu pink
-        // làm cho tailwind không nhận diện được các mã màu được cài đặt ăn theo màu pink là text-pink-500, bg-pink-500, border-pink-500
-        // pink: "#FFB5BF",
+        pink: "#FFB5BF",
         coral: "#FF6969",
         hover: "#AD4042",
         skyblue: "#94CEFA",
