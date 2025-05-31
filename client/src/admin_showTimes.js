@@ -7,7 +7,7 @@ async function loadMovies() {
     const movies = await res.json();
 
     const movieSelect = document.getElementById("movieSelect");
-    movieSelect.innerHTML = `<option value="">-- Chọn phim --</option>`;
+    movieSelect.innerHTML = `<option value="">-- Choose Movie --</option>`;
     movies.forEach((m) => {
       const opt = document.createElement("option");
       opt.value = m._id;

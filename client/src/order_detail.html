@@ -123,15 +123,27 @@
             <div class="mt-5">
               <p class="text-xs">* Ticket purchase cannot be cancelled</p>
             </div>
+            
             <button
               class="mt-4 w-full rounded-md border-[#FF6969] bg-[#FF6969] p-2 text-white hover:bg-red-500"
+              id="open-popup-btn"
             >
-              Checkout Ticket
+              Pay for Tickets
             </button>
+            
           </div>
         </div>
       </div>
     </div>
   </body>
   <footer></footer>
+  <script type="module">
+    import { showPopupPayment } from './popup_payment.js';
+
+    const btn = document.getElementById('open-popup-btn');
+
+    btn.addEventListener('click', () => {
+      showPopupPayment();
+    });
+  </script>
 </html>
